@@ -1,0 +1,86 @@
+﻿@page "/prescription"
+@inject HttpClient http
+@inject NavigationManager navigationManager
+
+
+<h3>Prescription List</h3>
+
+<div class="d-flex justify-content-end mb-2">
+    <a class="btn btn-primary btm-sm" href="/create">Add New</a>
+</div>
+@if (patients is null)
+{
+    <h2 class="bg-primary d-flex justify-content-center">Please Login to see data</h2>
+    <div class="d-flex justify-content-center mt-5">
+        <img src="/Images/loading.gif" />
+    </div>
+}
+@if (patients is not null)
+{
+    @foreach (var item in patients)
+    {
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <div>
+                    <img src="/Images/@item.PatientPicture" width="32" class="mr-2" />
+                    Name: @item.PatientName
+                </div>
+                <div>
+                    <a class="btn btn-success" href="edit/@item.PatientId">Edit</a>
+                    <a class="btn btn-warning" @onclick="@(()=> Delete(item.PatientId))">Delete</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>Medical Test Id</th>
+                            <th>Medical Test Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var singleEntry in item.TestEntries)
+                        {
+                            <tr>
+                                <td>@singleEntry.TestEntryId</td>
+                                <td>@singleEntry.MedicalTest.MedicalTestName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+
+
+
+@code {
+    List<Patient> patients { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+    async Task LoadData()
+    {
+        patients = await http.GetFromJsonAsync<List<Patient>>("api/Patients/GetPatients");
+    }
+
+    async Task Delete(int patientId)
+    {
+        var response = await http.DeleteAsync($"api/Patients/{patientId}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // remove the deleted customer from the list
+            patients.RemoveAll(c => c.PatientId == patientId);
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
+        }
+    }
+}
+

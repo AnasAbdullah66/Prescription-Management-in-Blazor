@@ -1,0 +1,83 @@
+﻿@page "/create"
+@inject HttpClient http
+@inject NavigationManager navigationManager
+
+<h3>Create</h3>
+
+<h3>Create Prescription</h3>
+
+<PresctiptionForm prescription="prescription" OnValidSubmit="OnValidSubmit" medicalTest="tests" SelectedFileChanged="HandleFileChanged">
+
+</PresctiptionForm>
+<div class="d-flex mt-4">
+    <a class="btn btn-link" href="Index">Back to list</a>
+</div>
+
+
+@code {
+    PrescriptionVM prescription = new PrescriptionVM();
+    List<MedicalTest>? tests = new List<MedicalTest>();
+
+    private IBrowserFile selectedFile;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+    async Task LoadData()
+    {
+        selectedFile = null;
+        tests = await http.GetFromJsonAsync<List<MedicalTest>>("api/Patients/GetTests");
+        prescription.TestList.Add(new MedicalTest());
+    }
+
+    private async Task HandleFileChanged(IBrowserFile file)
+    {
+        selectedFile = file;
+        Console.WriteLine(selectedFile.Name);
+    }
+
+    private async Task OnValidSubmit()
+    {
+        var formData = new MultipartFormDataContent();
+
+        foreach (var prop in typeof(PrescriptionVM).GetProperties())
+        {
+            var value = prop.GetValue(prescription);
+            if (value != null)
+            {
+                if (prop.Name == "TestList")
+                {
+                    for (int i = 0; i < prescription.TestList.Count(); i++)
+                    {
+                        formData.Add(new StringContent(prescription.TestList[i].MedicalTestId.ToString()), "TestList[" + i + "].MedicalTestId");
+                    }
+                    continue;
+                }
+                formData.Add(new StringContent(value.ToString()), prop.Name);
+            }
+        }
+        if (selectedFile is not null)
+        {
+            var fileContent = new StreamContent(selectedFile.OpenReadStream());
+            formData.Add(fileContent, "PictureFile", selectedFile.Name);
+        }
+
+        var response = await http.PostAsync("api/Patients", formData);
+
+        var body = await response.Content.ReadAsStringAsync();
+
+        if (response.IsSuccessStatusCode)
+        {
+            // success
+            Console.WriteLine($"the id of the user is: {body}");
+            navigationManager.NavigateTo("prescription");
+        }
+        else
+        {
+            // not success
+            Console.WriteLine(body);
+        }
+
+    }
+}

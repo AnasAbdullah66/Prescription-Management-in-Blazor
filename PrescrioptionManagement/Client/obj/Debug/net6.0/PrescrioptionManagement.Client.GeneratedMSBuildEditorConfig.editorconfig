@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = PrescrioptionManagement.Client
+build_property.RootNamespace = PrescrioptionManagement.Client
+build_property.ProjectDir = D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/MasterPage/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1hc3RlclBhZ2VcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/MasterPage/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1hc3RlclBhZ2VcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/MasterPage/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1hc3RlclBhZ2VcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/MasterPage/PresctiptionForm.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1hc3RlclBhZ2VcUHJlc2N0aXB0aW9uRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zv0jkzd466
+
+[D:/Blazor Pro/PrescrioptionManagement/PrescrioptionManagement/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-me48h7v788

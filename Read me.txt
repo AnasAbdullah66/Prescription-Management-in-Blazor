@@ -1,0 +1,20 @@
+"Assalamu Alaikum"
+
+I have created here a Masterpage Project for making Prescription.
+
+Please follow this to view project
+
+First give sqlServer name in appsettings.json file 
+
+Then update database by this command = update-database -Context "PrescriptionDbContext"
+
+After that go to sql server and give data in 'MedicalTest' table in 'PrescriptionDb' database.
+
+Run the project. Registration and login first. 
+
+Then select Prescription tab to view data. 
+
+Click 'Add' button to add new data. 
+
+Note: To view data login must.
+

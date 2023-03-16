@@ -1,0 +1,14 @@
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\bin\Debug\net6.0\PrescrioptionManagement.Shared.deps.json
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\bin\Debug\net6.0\PrescrioptionManagement.Shared.dll
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\bin\Debug\net6.0\PrescrioptionManagement.Shared.pdb
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.csproj.AssemblyReference.cache
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.AssemblyInfoInputs.cache
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.AssemblyInfo.cs
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.csproj.CoreCompileInputs.cache
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.dll
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\refint\PrescrioptionManagement.Shared.dll
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.pdb
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\ref\PrescrioptionManagement.Shared.dll
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\bin\Debug\net6.0\PrescrioptionManagement.Shared.runtimeconfig.json
+D:\Blazor Pro\PrescrioptionManagement\PrescrioptionManagement\Shared\obj\Debug\net6.0\PrescrioptionManagement.Shared.genruntimeconfig.cache
